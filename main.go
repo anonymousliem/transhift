@@ -11,8 +11,7 @@ import (
 
 func main() {
 	router := httprouter.New()
-	var url = "/transhift"
-	router.GET(url, func(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
+	router.GET("/transhift", func(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
 		queryValues := request.URL.Query()
 		text := queryValues.Get("q")
 		translated, err := gtranslate.TranslateWithParams(
@@ -29,6 +28,13 @@ func main() {
 		fmt.Fprintf(writer, translated)
 
 	})
+
+	router.GET("/", func(writer http.ResponseWriter, request *http.Request, params httprouter.Params) {
+
+		fmt.Fprintf(writer, "TRANSHFIT IS WORKING")
+
+	})
+
 	server := http.Server{
 		Handler: router,
 		Addr: ":8080",
