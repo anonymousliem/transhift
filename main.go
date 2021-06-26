@@ -31,7 +31,7 @@ func main() {
 	})
 	server := http.Server{
 		Handler: router,
-		Addr: "localhost:3000",
+		Addr: ":8080",
 	}
 
 	server.ListenAndServe()
