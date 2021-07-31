@@ -18,7 +18,8 @@ $ git clone https://github.com/anonymousliem/transhift
 # go into app's directory
 $ cd transhift
 
-# in main.go change
+# ignore it if you use linux
+# for windows machine ->  in main.go change
 from Addr: ":8080" to Addr: "localhost:8080"
 
 # to run application
