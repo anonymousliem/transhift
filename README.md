@@ -1,4 +1,4 @@
-## General info
+## General Info
 This project is web application to translate from Bahasa Indonesia (ID) to English (EN). 
 
 ![image](https://user-images.githubusercontent.com/38047246/123521140-00899600-d6df-11eb-84e8-6d788750f175.png)
