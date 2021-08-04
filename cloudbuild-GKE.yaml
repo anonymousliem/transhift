@@ -4,6 +4,6 @@ steps:
 - name: "gcr.io/cloud-builders/gke-deploy"
   args:
     - run
-    - --filename=kubernetes-resource-file
-    - --location=location
-    - --cluster=cluster
+    - --filename=RESOURCE_FILE
+    - --location=YOUR_LOCATION
+    - --cluster=YOUR_CLUSTER_NAME
